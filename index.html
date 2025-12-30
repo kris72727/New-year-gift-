@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year Princess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <section class="screen active" id="welcome">
+            <div class="content">
+                <h1>2026</h1>
+                <p>See what I made for you...</p>
+                <button onclick="nextScreen('bucket-list')">Open ✨</button>
+            </div>
+        </section>
+
+        <section class="screen" id="bucket-list">
+            <h2>Our 2026 Goals</h2>
+            <div class="list">
+                <label><input type="checkbox"> Travel to the beach</label>
+                <label><input type="checkbox"> Watch 100 movies</label>
+                <label><input type="checkbox"> Cook a meal together</label>
+            </div>
+            <button onclick="nextScreen('music')">Next ❤️</button>
+        </section>
+
+        <section class="screen" id="music">
+            <h2>Songs for You</h2>
+            <div class="song-card">
+                <p>Playing: "Our Song"</p>
+                <audio controls>
+                    <source src="assets/song.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <button onclick="nextScreen('final')">The Final Note</button>
+        </section>
+
+        <section class="screen" id="final">
+            <div class="envelope">
+                <p>Happy New Year! I'm so glad you're in my life.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
